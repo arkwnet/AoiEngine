@@ -38,3 +38,7 @@ function AoiDrawSample() {
 	g.fillText(frame, 20, 20);
 	g.fillText(time, 20, 60);
 }
+
+function AoiDrawImage(img, x, y) {
+	g.drawImage(img, x, y);
+}
