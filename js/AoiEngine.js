@@ -24,7 +24,7 @@ function AoiInit() {
 function AoiMain() {
 	g.fillStyle = "black";
 	g.fillRect(0, 0, w, h);
-	AoiDrawSample();
+	main();
 	frame++;
 	if (frame >= 60) {
 		frame = 0;
