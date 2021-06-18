@@ -4,41 +4,47 @@
 	Licensed under the MIT License
 */
 
-var canvas = null;
-var g = null;
-var w = 800;
-var h = 480;
-var frame = 0;
-var time = 0;
+var AoiCanvas = null;
+var AoiContext = null;
+var AoiWidth = 800;
+var AoiHeight = 480;
+var AoiFrame = 0;
+var AoiTime = 0;
 
 window.onload = function() {
 	AoiInit();
 }
 
 function AoiInit() {
-	canvas = document.getElementById("canvas");
-	g = canvas.getContext("2d");
+	AoiCanvas = document.getElementById("canvas");
+	AoiContext = canvas.getContext("2d");
 	AoiMain();
 }
 
 function AoiMain() {
-	g.fillStyle = "black";
-	g.fillRect(0, 0, w, h);
+	AoiContext.fillStyle = "black";
+	AoiContext.fillRect(0, 0, AoiWidth, AoiHeight);
 	main();
-	frame++;
-	if (frame >= 60) {
-		frame = 0;
-		time++;
+	AoiFrame++;
+	if (AoiFrame >= 60) {
+		AoiFrame = 0;
+		AoiTime++;
 	}
 	requestAnimationFrame(AoiMain);
 }
 
 function AoiDrawSample() {
-	g.fillStyle = "red";
-	g.fillText(frame, 20, 20);
-	g.fillText(time, 20, 60);
+	AoiContext.fillStyle = "red";
+	AoiContext.fillText(frame, 20, 20);
+	AoiContext.fillText(time, 20, 60);
 }
 
 function AoiDrawImage(img, x, y) {
-	g.drawImage(img, x, y);
+	AoiContext.drawImage(img, x, y);
+}
+
+function AoiDrawText(text, x, y, color, font) {
+	AoiContext.fillStyle = color;
+	AoiContext.font = font;
+	AoiContext.fillText(text, x, y);
 }
