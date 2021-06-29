@@ -4,19 +4,18 @@
 	Licensed under the MIT License
 */
 
-var AoiCanvas = null;
-var AoiContext = null;
-var AoiWidth = 800;
-var AoiHeight = 480;
-var AoiFrame = 0;
-var AoiTime = 0;
+const AoiVersion = "1.0";
+let AoiCanvas = null;
+let AoiContext = null;
+let AoiWidth = null;
+let AoiHeight = null;
+let AoiFrame = 0;
+let AoiTime = 0;
 
-window.onload = function() {
-	AoiInit();
-}
-
-function AoiInit() {
-	AoiCanvas = document.getElementById("canvas");
+function AoiInit(id) {
+	AoiCanvas = document.getElementById(id);
+	AoiWidth = AoiCanvas.clientWidth;
+	AoiHeight = AoiCanvas.clientHeight;
 	AoiContext = canvas.getContext("2d");
 	AoiMain();
 }
@@ -31,12 +30,6 @@ function AoiMain() {
 		AoiTime++;
 	}
 	requestAnimationFrame(AoiMain);
-}
-
-function AoiDrawSample() {
-	AoiContext.fillStyle = "red";
-	AoiContext.fillText(frame, 20, 20);
-	AoiContext.fillText(time, 20, 60);
 }
 
 function AoiDrawImage(img, x, y) {
