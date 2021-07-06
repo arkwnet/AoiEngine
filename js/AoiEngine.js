@@ -16,7 +16,7 @@ function AoiInit(id) {
 	AoiCanvas = document.getElementById(id);
 	AoiWidth = AoiCanvas.clientWidth;
 	AoiHeight = AoiCanvas.clientHeight;
-	AoiContext = canvas.getContext("2d");
+	AoiContext = AoiCanvas.getContext("2d");
 	AoiMain();
 }
 
