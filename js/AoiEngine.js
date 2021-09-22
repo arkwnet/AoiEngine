@@ -42,6 +42,10 @@ function AoiDrawText(text, x, y, color, font) {
 	AoiContext.fillText(text, x, y);
 }
 
+function AoiDrawBox(x, y, w, h) {
+	AoiContext.fillRect(x, y, w, h);
+}
+
 function AoiSetColor(color) {
 	AoiContext.fillStyle = color;
 }
