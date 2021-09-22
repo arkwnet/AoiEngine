@@ -49,3 +49,7 @@ function AoiDrawBox(x, y, w, h) {
 function AoiSetColor(color) {
 	AoiContext.fillStyle = color;
 }
+
+function AoiGeneratePNGImage() {
+	return AoiCanvas.toDataURL("image/png");
+}
