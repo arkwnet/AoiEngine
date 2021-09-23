@@ -1,10 +1,10 @@
 /*
-	AoiEngine Ver.1.0
+	AoiEngine Ver.1.1
 	Copyright (c) 2021 Sora Arakawa
 	Licensed under the MIT License
 */
 
-const AoiVersion = "1.0";
+const AoiVersion = "1.1";
 let AoiCanvas = null;
 let AoiContext = null;
 let AoiWidth = null;
@@ -40,4 +40,20 @@ function AoiDrawText(text, x, y, color, font) {
 	AoiContext.fillStyle = color;
 	AoiContext.font = font;
 	AoiContext.fillText(text, x, y);
+}
+
+function AoiDrawBox(x, y, w, h) {
+	AoiContext.fillRect(x, y, w, h);
+}
+
+function AoiSetColor(color) {
+	AoiContext.fillStyle = color;
+}
+
+function AoiGeneratePNGImage() {
+	return AoiCanvas.toDataURL("image/png");
+}
+
+function AoiGenerateJPEGImage() {
+	return AoiCanvas.toDataURL("image/jpeg");
 }

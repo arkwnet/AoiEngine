@@ -34,6 +34,33 @@ font : フォント (String)
 
 文字を描画します。
 
+### AoiDrawBox(x, y, w, h)
+
+x : 表示先のX座標 (int)  
+y : 表示先のY座標 (int)  
+w : 表示する図形の幅 (int)  
+h : 表示する図形の高さ (int)
+
+塗りつぶし四角形を描画します。
+
+### AoiSetColor(color)
+
+color : 設定する色 (String)
+
+塗りつぶしに使用する色を変更します。
+
+### AoiGeneratePNGImage
+
+戻り値 : base64形式に変換したcanvasのPNG画像 (String)
+
+canvasをPNG画像に変換し、base64形式で返します。
+
+### AoiGenerateJPEGImage
+
+戻り値 : base64形式に変換したcanvasのJPEG画像 (String)
+
+canvasをJPEG画像に変換し、base64形式で返します。
+
 
 ## 変数
 
