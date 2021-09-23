@@ -55,6 +55,12 @@ color : 設定する色 (string)
 
 canvasをPNG画像に変換し、base64形式で返します。
 
+### AoiGenerateJPEGImage
+
+戻り値 : base64形式に変換したcanvasのJPEG画像 (string)
+
+canvasをJPEG画像に変換し、base64形式で返します。
+
 
 ## 変数
 

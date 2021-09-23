@@ -1,5 +1,5 @@
 /*
-	AoiEngine Ver.1.1 (Beta)
+	AoiEngine Ver.1.1
 	Copyright (c) 2021 Sora Arakawa
 	Licensed under the MIT License
 */
@@ -52,4 +52,8 @@ function AoiSetColor(color) {
 
 function AoiGeneratePNGImage() {
 	return AoiCanvas.toDataURL("image/png");
+}
+
+function AoiGenerateJPEGImage() {
+	return AoiCanvas.toDataURL("image/jpeg");
 }
