@@ -45,19 +45,19 @@ h : 表示する図形の高さ (int)
 
 ### AoiSetColor(color)
 
-color : 設定する色 (string)
+color : 設定する色 (String)
 
 塗りつぶしに使用する色を変更します。
 
 ### AoiGeneratePNGImage
 
-戻り値 : base64形式に変換したcanvasのPNG画像 (string)
+戻り値 : base64形式に変換したcanvasのPNG画像 (String)
 
 canvasをPNG画像に変換し、base64形式で返します。
 
 ### AoiGenerateJPEGImage
 
-戻り値 : base64形式に変換したcanvasのJPEG画像 (string)
+戻り値 : base64形式に変換したcanvasのJPEG画像 (String)
 
 canvasをJPEG画像に変換し、base64形式で返します。
 
