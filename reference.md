@@ -61,6 +61,20 @@ canvasをPNG画像に変換し、base64形式で返します。
 
 canvasをJPEG画像に変換し、base64形式で返します。
 
+### AoiShowLoading
+
+ロード画面を表示します。
+
+### AoiHideLoading
+
+ロード画面の表示を終了します。
+
+### AoiSetLoadingImage(path)
+
+path : 画像のパス (String)
+
+ロード画面に使用する画像を指定します。
+
 
 ## 変数
 
@@ -78,3 +92,6 @@ AoiEngineのバージョンです。
 
 ### AoiTime
 実行開始からの経過時間です。60フレーム = 1秒で計算しています。
+
+### AoiLoading
+ロード画面を表示している場合はtrue、表示していない場合はfalseが代入されます。
