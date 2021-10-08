@@ -1,5 +1,5 @@
 /*
-	AoiEngine Ver.1.2 (Beta)
+	AoiEngine Ver.1.2
 	Copyright (c) 2021 Sora Arakawa
 	Licensed under the MIT License
 */
