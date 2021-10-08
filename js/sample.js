@@ -3,6 +3,7 @@ logo.src = "img/logo.png";
 
 window.onload = function() {
 	AoiInit("canvas");
+	AoiSetLoadingImage("img/loading.png");
 	AoiShowLoading();
 }
 
